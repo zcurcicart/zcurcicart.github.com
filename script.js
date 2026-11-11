@@ -89,7 +89,7 @@
   var boxCap = box.querySelector("figcaption");
 
   document.addEventListener("click", function (event) {
-    var img = event.target.closest(".gallery img, .hero img, .book img");
+    var img = event.target.closest(".gallery img, .hero img, .book img, .exhibition-photos img");
     if (!img) { return; }
     var caption = img.parentElement.querySelector("figcaption");
     boxImg.src = img.src;
